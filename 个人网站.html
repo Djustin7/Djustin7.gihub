@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Justin - AI产品专家 & 数字游民</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .bg-gradient-dark {
+      background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+    }
+    .hover-scale {
+      transition: transform 0.3s ease;
+    }
+    .hover-scale:hover {
+      transform: scale(1.03);
+    }
+  </style>
+</head>
+<body class="bg-gray-50 font-sans antialiased">
+  <!-- 导航栏 -->
+  <nav class="bg-gradient-dark text-white shadow-lg sticky top-0 z-50">
+    <div class="container mx-auto px-6 py-4">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center space-x-4">
+          <i class="fas fa-robot text-2xl"></i>
+          <span class="text-xl font-bold">Justin</span>
+        </div>
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="#about" class="hover:text-blue-200 transition">关于我</a>
+          <a href="#projects" class="hover:text-blue-200 transition">项目</a>
+          <a href="#contact" class="hover:text-blue-200 transition">联系</a>
+        </div>
+        <button class="md:hidden focus:outline-none">
+          <i class="fas fa-bars text-xl"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 英雄区域 -->
+  <header class="bg-gradient-dark text-white py-20">
+    <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2 mb-10 md:mb-0">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">你好，我是<span class="text-blue-300">Justin</span></h1>
+        <p class="text-xl mb-6">产品经理,AI技术初学者</p>
+        <div class="flex space-x-4">
+          <a href="#contact" class="bg-white text-blue-800 px-6 py-3 rounded-full font-semibold hover:bg-blue-100 transition">联系我</a>
+          <a href="#projects" class="border border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-800 transition">查看项目</a>
+        </div>
+      </div>
+      <div class="md:w-1/2 flex justify-center">
+        <div class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-xl">
+          <img src="https://picsum.photos/800/800?random=1" alt="Justin" class="w-full h-full object-cover">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 关于我 -->
+  <section id="about" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-16">关于我</h2>
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 mb-10 md:mb-0">
+          <img src="https://picsum.photos/600/400?random=2" alt="工作场景" class="rounded-lg shadow-xl w-full">
+        </div>
+        <div class="md:w-1/2 md:pl-12">
+          <div class="bg-gray-100 p-6 rounded-lg">
+            <h3 class="text-2xl font-semibold mb-4">专业背景</h3>
+            <ul class="space-y-4">
+              <li class="flex items-start">
+                <i class="fas fa-briefcase text-blue-600 mt-1 mr-3"></i>
+                <span>前字节跳动AI产品经理（参与豆包/剪映/扣子底层模型能力数据支持）</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-chalkboard-teacher text-blue-600 mt-1 mr-3"></i>
+                <span>现AI智能体培训讲师（3000+学员认证）</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-book text-blue-600 mt-1 mr-3"></i>
+                <span>《AI应用从小白到专家》书籍出版中</span>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="mt-8 grid grid-cols-2 gap-4">
+            <div class="bg-blue-50 p-4 rounded-lg">
+              <i class="fas fa-users text-blue-600 text-2xl mb-2"></i>
+              <h4 class="font-semibold">社区主理人</h4>
+              <p class="text-sm text-gray-600">Agent 101开源社区</p>
+            </div>
+            <div class="bg-blue-50 p-4 rounded-lg">
+              <i class="fas fa-lightbulb text-blue-600 text-2xl mb-2"></i>
+              <h4 class="font-semibold">独立产品</h4>
+              <p class="text-sm text-gray-600">不写代码实现商业化</p>
+            </div>
+            <div class="bg-blue-50 p-4 rounded-lg">
+              <i class="fas fa-chart-line text-blue-600 text-2xl mb-2"></i>
+              <h4 class="font-semibold">企业咨询</h4>
+              <p class="text-sm text-gray-600">20+团队智能体部署</p>
+            </div>
+            <div class="bg-blue-50 p-4 rounded-lg">
+              <i class="fas fa-bullseye text-blue-600 text-2xl mb-2"></i>
+              <h4 class="font-semibold">万人计划</h4>
+              <p class="text-sm text-gray-600">解放10000人生产力</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 项目展示 -->
+  <section id="projects" class="py-20 bg-gray-100">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-16">精选项目</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- 项目1 -->
+        <div class="bg-white rounded-xl overflow-hidden shadow-lg hover-scale">
+          <img src="https://picsum.photos/600/400?random=3" alt="春节红包封面生成工具" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">春节红包封面生成工具</h3>
+            <p class="text-gray-600 mb-4">AI生成个性化春节红包封面</p>
+            <a href="https://hongbao.agent101.cn/" target="_blank" class="text-blue-600 font-medium inline-flex items-center">
+              访问项目 <i class="fas fa-external-link-alt ml-2"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- 项目2 -->
+        <div class="bg-white rounded-xl overflow-hidden shadow-lg hover-scale">
+          <img src="https://picsum.photos/600/400?random=4" alt="决明子-AI辅助决策工具" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">决明子-AI辅助决策工具</h3>
+            <p class="text-gray-600 mb-4">基于AI的智能决策支持系统</p>
+            <a href="https://jueming.agent101.cn/" target="_blank" class="text-blue-600 font-medium inline-flex items-center">
+              访问项目 <i class="fas fa-external-link-alt ml-2"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- 项目3 -->
+        <div class="bg-white rounded-xl overflow-hidden shadow-lg hover-scale">
+          <img src="https://picsum.photos/600/400?random=5" alt="Agent 101 智能体指北" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Agent 101 智能体指北</h3>
+            <p class="text-gray-600 mb-4">AI智能体开发指南与最佳实践</p>
+            <a href="https://agent101.feishu.cn/wiki/KLarwIA1piLrBYk7bf2cBf3HnNe" target="_blank" class="text-blue-600 font-medium inline-flex items-center">
+              访问项目 <i class="fas fa-external-link-alt ml-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 联系信息 -->
+  <section id="contact" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-16">联系我</h2>
+      <div class="max-w-3xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-gray-100 p-8 rounded-xl">
+            <h3 class="text-xl font-semibold mb-6">联系方式</h3>
+            <ul class="space-y-4">
+              <li class="flex items-center">
+                <i class="fas fa-phone text-blue-600 mr-4"></i>
+                <span>182-1246-0001</span>
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-envelope text-blue-600 mr-4"></i>
+                <span>Justin@163.com</span>
+              </li>
+              <li class="flex items-center">
+                <i class="fab fa-weixin text-blue-600 mr-4"></i>
+                <span>Justin</span>
+              </li>
+            </ul>
+            
+            <div class="mt-8">
+              <h4 class="font-semibold mb-4">社交媒体</h4>
+              <div class="flex space-x-4">
+                <a href="#" class="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center hover:bg-blue-700 transition">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="w-10 h-10 rounded-full bg-blue-400 text-white flex items-center justify-center hover:bg-blue-500 transition">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="w-10 h-10 rounded-full bg-gray-800 text-white flex items-center justify-center hover:bg-gray-700 transition">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="bg-gray-100 p-8 rounded-xl">
+            <h3 class="text-xl font-semibold mb-6">发送消息</h3>
+            <form>
+              <div class="mb-4">
+                <label for="name" class="block text-gray-700 mb-2">姓名</label>
+                <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+              </div>
+              <div class="mb-4">
+                <label for="email" class="block text-gray-700 mb-2">邮箱</label>
+                <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+              </div>
+              <div class="mb-4">
+                <label for="message" class="block text-gray-700 mb-2">消息</label>
+                <textarea id="message" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+              </div>
+              <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition">发送</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="bg-gray-900 text-white py-10">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-6 md:mb-0">
+          <div class="flex items-center space-x-2">
+            <i class="fas fa-robot text-2xl"></i>
+            <span class="text-xl font-bold">Justin</span>
+          </div>
+          <p class="mt-2 text-gray-400">AI产品专家 · 数字游民 · 效率革命推动者</p>
+        </div>
+        <div class="flex space-x-6">
+          <a href="#" class="text-gray-400 hover:text-white transition">隐私政策</a>
+          <a href="#" class="text-gray-400 hover:text-white transition">使用条款</a>
+          <a href="#contact" class="text-gray-400 hover:text-white transition">联系</a>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500">
+        <p>&copy; 2023 Justin. 保留所有权利.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 返回顶部按钮 -->
+  <button id="backToTop" class="fixed bottom-8 right-8 w-12 h-12 bg-blue-600 text-white rounded-full shadow-lg flex items-center justify-center opacity-0 invisible transition-all duration-300">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script>
+    // 返回顶部按钮
+    const backToTopBtn = document.getElementById('backToTop');
+    
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) {
+        backToTopBtn.classList.remove('opacity-0', 'invisible');
+        backToTopBtn.classList.add('opacity-100', 'visible');
+      } else {
+        backToTopBtn.classList.remove('opacity-100', 'visible');
+        backToTopBtn.classList.add('opacity-0', 'invisible');
+      }
+    });
+    
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  </script>
+</body>
+</html>
